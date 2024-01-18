@@ -22,7 +22,7 @@ export default function Medium() {
                 const res = await axios.get(url, config)
                 setMovies(res.data.results)
             } catch (err) {
-                console.log(err)
+                alert('error')
             }
         }
         searchMovies()
@@ -51,6 +51,8 @@ export default function Medium() {
                             <p id='movieDate'>Release date: {movie.release_date}</p>
                             <p>Popularity: {movie.popularity}</p>
                             <p>Original language: {movie.original_language}</p>
+                            <p>Avergae Vote: {movie.vote_average}</p>
+                            <p>Vote count: {movie.vote_count}</p>
                         </section>
                     </section>
                 ))}
