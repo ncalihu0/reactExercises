@@ -1,0 +1,30 @@
+html,
+body {
+    background: #231F20;
+    margin: 0;
+}
+
+header {
+    padding: 0 0 15px;
+}
+
+.mainNav {
+    display: flex;
+    align-items: center;
+    padding: 2rem 0 0;
+    justify-content: center;
+    flex-direction: column;
+}
+
+
+.mainNav a {
+    color: white;
+    font-family: pixelify sans;
+    font-size: 1.5rem;
+    text-decoration: none;
+    text-align: center;
+}
+
+.mainNav a:hover {
+    opacity: 0.5;
+}

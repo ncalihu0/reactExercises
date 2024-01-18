@@ -1,0 +1,80 @@
+.searchBar {
+    height: 80px;
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+}
+
+.searchBar input {
+    text-align: center;
+    height: 20px;
+    border-radius: 20px;
+    border: none;
+    font-family: pixelify sans;
+}
+
+.grid img {
+    width: 200px;
+    height: 350px;
+    text-align: center;
+    font-family: pixelify sans;
+    font-style: italic;
+    line-height: 12;
+}
+
+.grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
+    justify-items: center;
+    grid-row-gap: 70px;
+}
+
+
+.grid p {
+    text-align: center;
+    margin-bottom: 0;
+    font-family: pixelify sans;
+    font-size: 1.2rem;
+    color: white;
+}
+
+.search-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 350px;
+    height: 450px;
+    justify-content: center;
+    border: 1px solid #231f20;
+    box-shadow: rgb(0 0 0 / 38%) 2.4px 2.4px 3.2px;
+}
+
+.description {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    color: white;
+    position: absolute;
+    background: rgba(0, 0, 0, 0.714);
+    height: 450px;
+    width: 350px;
+    justify-content: center;
+    opacity: 0;
+    transition: 0.6s;
+}
+
+.description:hover {
+    opacity: 1;
+    cursor: pointer;
+}
+
+.description p {
+    width: 300px;
+    font-size: 17px;
+    margin: 0;
+}
+
+#movieDate {
+    margin-top: 10px;
+}
