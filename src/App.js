@@ -3,7 +3,6 @@ import Easy from './pages/Easy';
 import Medium from './pages/Medium';
 import Hard from './pages/Hard';
 import Taskdetail from './pages/Taskdetail';
-import Tasklist from './pages/Tasklist';
 import Head from './components/Head';
 import {
   BrowserRouter as Router,
@@ -23,8 +22,7 @@ function App() {
           <section className='dropdown'>
             <Link to='/Hard'>Hard</Link>
             <section className='dropdown-content'>
-              <Link to="/Tasklist">Task List</Link>
-              <Link to='/Taskdetail'>Task Detail</Link>
+              <Link to="/Taskdetail">Task List</Link>
             </section>
           </section>
         </nav>
@@ -32,7 +30,6 @@ function App() {
           <Route path='/Easy' element={<Easy />}></Route>
           <Route path='/Medium' element={<Medium />}></Route>
           <Route path='/Hard' element={<Hard />}></Route>
-          <Route path='/Tasklist' element={<Tasklist />}></Route>
           <Route path='/Taskdetail' element={<Taskdetail />}></Route>
         </Routes>
 
