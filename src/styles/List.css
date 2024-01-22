@@ -1,7 +1,41 @@
-.todoList {
+.addTask {
     color: white;
     display: flex;
     flex-direction: column;
-    justify-content: center;
     align-items: center;
+    width: 100vw;
+}
+
+#title,
+#Description {
+    width: 30%
+}
+
+#title {
+    margin-bottom: 20px;
+}
+
+.addTask button {
+    margin-top: 20px;
+}
+
+
+.completed {
+    text-decoration: line-through;
+    opacity: 0.3;
+}
+
+.taskGrid {
+    display: grid;
+    justify-items: center;
+    grid-template-columns: repeat(auto-fit, minmax(500px, 1fr));
+}
+
+.todoTask {
+    text-align: center;
+    color: white;
+}
+
+.todoTask button {
+    margin-right: 5px
 }
